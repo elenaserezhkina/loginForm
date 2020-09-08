@@ -72,7 +72,7 @@ const LoginForm = () => {
       <div className="container">
         <div className="logo"></div>
         <header className="header">Management Center</header>
-        <form className="form" onSubmit={submitForm}>
+        <form className="form" onSubmit={submitForm} data-testid="login-form">
           <div className="inputFields">
             <Input
               fieldName="Username"
