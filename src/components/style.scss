@@ -50,9 +50,15 @@
     border-radius: 3px;
     padding: 5px 40px;
     font-size: 10px;
-    margin: 5px 20px 20px 20px;
+    margin: 5px 35px 20px 20px;
     width: 40px;
     align-self: flex-end;
     font-family: "Montserrat", sans-serif;
+    transition: 0.5s;
+  }
+  .loginButton:hover {
+    transition: 0.5s;
+    background-color: $darkRed;
+    color: white;
   }
 }
