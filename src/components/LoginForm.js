@@ -58,13 +58,13 @@ const LoginForm = () => {
     }
     if (!userName && !password) {
       setErrorMessage({
-        Username: "Username is required",
-        Password: "Password is required",
+        Username: "Field is Required",
+        Password: "Field is Required",
       });
     } else if (!userName) {
-      setErrorMessage({ ...errorMessage, Username: "Username is required" });
+      setErrorMessage({ ...errorMessage, Username: "Field is Required" });
     } else if (!password) {
-      setErrorMessage({ ...errorMessage, Password: "Password is required" });
+      setErrorMessage({ ...errorMessage, Password: "Field is Required" });
     }
   };
   return (
