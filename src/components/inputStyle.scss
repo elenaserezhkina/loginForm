@@ -1,0 +1,38 @@
+@import "../utils/colors.scss";
+
+.inputField {
+  display: flex;
+  position: relative;
+}
+.inputValue {
+  width: 230px;
+  font-size: 11px;
+  padding: 5px 0 3px 0;
+  margin-top: 15px;
+  border: none;
+  border-bottom: 1px solid $mainDark;
+}
+.inputValue:focus {
+  outline: none;
+}
+.error {
+  border-bottom: 1px solid $mainRed;
+}
+.errorMessage {
+  color: $mainRed;
+  font-size: 8px;
+  padding: 0;
+  margin: 2px;
+}
+.error.inputValue::placeholder {
+  color: $mainRed;
+}
+.iconContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  svg {
+    font-size: 15px;
+    color: $mainDark;
+  }
+}
